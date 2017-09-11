@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
     <title>Keyword结果详情 - BTHUB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="static/css/public.css">
     <link rel="stylesheet" type="text/css" href="static/css/footer.css">
     <link rel="stylesheet" type="text/css" href="static/css/detail.css">
@@ -56,8 +57,8 @@
                     </div>
                     <div class="share-zone fr">
                         <span>分享到:</span>
-                        <a><i class="fa fa-weixin share-wx" aria-hidden="true"></i></a>
-                        <a><i class="fa fa-weibo share-wb" aria-hidden="true"></i></a>
+                        <a onclick="openWXShareWindow()"><i class="fa fa-weixin share-wx" aria-hidden="true"></i></a>
+                        <a onclick="openWBShareWindow()"><i class="fa fa-weibo share-wb" aria-hidden="true"></i></a>
                         <a><i class="fa fa-picture-o share-pic" aria-hidden="true"></i></a>
                     </div>
                 </div>
@@ -1578,7 +1579,51 @@
                 </div>
             </div>
             <div id="right-content" class="fr">
-                <a onclick="openWBShareWindow()">点我</a>
+                <div id="hot-search">
+                    <h3>大家都在搜</h3>
+                    <ul>
+                        <li class="clearfix">
+                            <a class="hot-keyword">coat ryo</a>
+                            <span><i class="fa fa-clock-o" aria-hidden="true"></i>18 分钟前</span>
+                        </li>
+                        <li class="clearfix">
+                            <a class="hot-keyword">keyword1</a>
+                            <span><i class="fa fa-clock-o" aria-hidden="true"></i>18 分钟前</span>
+                        </li>
+                        <li class="clearfix">
+                            <a class="hot-keyword">keyword1</a>
+                            <span><i class="fa fa-clock-o" aria-hidden="true"></i>18 分钟前</span>
+                        </li>
+                        <li class="clearfix">
+                            <a class="hot-keyword">keyword1</a>
+                            <span><i class="fa fa-clock-o" aria-hidden="true"></i>18 分钟前</span>
+                        </li>
+                        <li class="clearfix">
+                            <a class="hot-keyword">keyword1</a>
+                            <span><i class="fa fa-clock-o" aria-hidden="true"></i>18 分钟前</span>
+                        </li>
+                        <li class="clearfix">
+                            <a class="hot-keyword">肖申克的救赎</a>
+                            <span><i class="fa fa-clock-o" aria-hidden="true"></i>18 分钟前</span>
+                        </li>
+                        <li class="clearfix">
+                            <a class="hot-keyword">肖申克的救赎</a>
+                            <span><i class="fa fa-clock-o" aria-hidden="true"></i>18 分钟前</span>
+                        </li>
+                        <li class="clearfix">
+                            <a class="hot-keyword">肖申克的救赎</a>
+                            <span><i class="fa fa-clock-o" aria-hidden="true"></i>18 分钟前</span>
+                        </li>
+                        <li class="clearfix">
+                            <a class="hot-keyword">肖申克的救赎</a>
+                            <span><i class="fa fa-clock-o" aria-hidden="true"></i>18 分钟前</span>
+                        </li>
+                        <li class="clearfix">
+                            <a class="hot-keyword">肖申克的救赎</a>
+                            <span><i class="fa fa-clock-o" aria-hidden="true"></i>18 分钟前</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div id="foot">
@@ -1647,7 +1692,7 @@
             setTimeout("az()", 500);
         }
         function openWBShareWindow(title, url){
-            var s = 'http://v.t.sina.com.cn/share/share.php?title='+ 'aaa' +'&url='+ 'http://www.baidu.com' +'&content=utf-8&sourceUrl='+url;
+            var s = 'http://v.t.sina.com.cn/share/share.php?title='+ '我发现一个很好的资源!' +'&url='+ 'http://www.baidu.com' +'&content=utf-8&sourceUrl='+url;
             window.open(s,'newwindow','height=400,width=400,top=100,left=100');
         }
     </script>
